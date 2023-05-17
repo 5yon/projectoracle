@@ -1,0 +1,54 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Login Form</title>
+      <!-- Creates a Title Called Login form this will be displayed at the top of the website -->
+      <link rel="stylesheet" type="text/css" href="/static/login.css">
+      <!-- Connects the HTML page to an external CSS file stored in the 'static' folder & called 'login.css' -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <!-- connects to a font library-->
+   </head>
+   <body>
+      <div class="center">
+         <!-- Centres the Login form to make it display in the middle of the page -->
+         <div class="header">
+            Login Form
+         </div>
+         <form action="/login" method="POST">
+            <!-- sends HTML data to "/login" URL with "POST" method when run -->
+         <form>
+            <input type="text" name="username" placeholder="Enter Username">
+            <!--"text" input field created in HTML & name="username" is used as a connection link to the app.py ie(request.form['username']  & "Enter User..." as the placeholder-->
+            <i class="far fa-envelope"></i>
+            <!--Creates a Envelop icon using Font Awesome library-->
+            <input type="password" id="pswrd" name="password" placeholder="Enter Password">
+            <!--creates password input field with an ID of "pswrd"to link to the JS, & name="password" and "Enter Password" as the placeholder-->
+            <i class="fas fa-lock" onclick="show()"></i>
+            <!-- Creates a Lock icon, that shows the password, when clicked -->
+            <input type="submit" name="submit "value="Sign in">
+            <!--creates a submit button with = "submit" and a value = "Sign in" that when clicked, it will submit the entered data -->
+            <a><br>  Not yet a Member? <a href="/register"><b>Create Account</b></a>
+            <!--Not yet a Member link created that redirects the user to the Register page, where they can create an account-->
+         </form>
+      </div>
+      <script>
+         function show(){
+          //Calling the function 'Show'
+          var pswrd = document.getElementById('pswrd');
+          //assigns the element with ID of "pswrd" to a variable called "pswrd"
+          var icon = document.querySelector('.fas');
+          //selects the first element class of "fas" and assigns it to a variable named "icon"
+          if (pswrd.type === "password") {
+           pswrd.type = "text";
+           pswrd.style.marginTop = "20px";
+           icon.style.color = "#7f2092";
+           // when password if visbile changes the colour to purple
+          }else{
+           pswrd.type = "password";
+           icon.style.color = "grey";
+           //when password is not visbile colour is grey
+          }
+         }
+      </script>
+   </body>
+</html>

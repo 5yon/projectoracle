@@ -1,0 +1,233 @@
+<form action="/about" ></form>
+<html >
+
+<head >
+<title > Jumanji Pets </title >
+    <link rel= "stylesheet" type="text/css"  href = "/static/about.css">
+
+</head >
+<body >
+    <div class = " menu-bar ">
+
+<ul >
+<li class="active"><a href="/"> Home</a> </li >
+<li ><a href="#">Our Fish</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="#">Tetra</a></li>
+            <li><a href="#">Gourami</a></li>
+            <li><a href="#">Angelfish</a></li>
+            <li><a href="#">Mollies</a></li>
+            <li><a href="#">Discus</a></li>
+        </ul>
+
+    </div>
+
+
+</li >
+<li ><a href="#"> Aquarium Food</a>
+  <div class="sub-menu-1">
+        <ul>
+            <li><a href="#">Flake  </a></li>
+            <li><a href="#">Pellet  </a></li>
+
+        </ul>
+
+    </div>
+</li >
+<li ><a href="/about">About</a> </li >
+<li ><a href="logout" class="btn btn-info btn-lg">
+    <span class="glyphicon glyphicon-log-out"></span> Log out
+  </a> </li >
+<li ><a href="/user">Login</a> </li >
+
+</ul >
+  </div>
+
+</body >
+</html >
+</form>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We are a fish store, who have been open for over 20 years now, with staff of great experience.</p>
+  <p>We are now offering an online shopping service.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/AB3.png" alt="Tom" style="width:100%">
+      <div class="container">
+        <h2>Tom Smith</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Enjoy the new Website!</p>
+        <p>jumanjipets_mrtom@proton.me</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/AB2.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Ross</h2>
+        <p class="title">Co-founder</p>
+        <p>Tom and I have had many years experience and are happy to share our knowledge with you.</p>
+        <p>jumanjipets_mrjohn@proton.me</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/AB1.png" alt="Shelly" style="width:100%">
+      <div class="container">
+        <h2>Shelly Yeng</h2>
+        <p class="title">Designer</p>
+        <p>I love my job!.</p>
+        <p>jumanjipets_mrsshelly@proton.me</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Skills Bar | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="skill-bars">
+    <div class="bar">
+      <div class="info">
+        <span>HTML</span>
+      </div>
+      <div class="progress-line html">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>CSS</span>
+      </div>
+      <div class="progress-line css">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>jQuery</span>
+      </div>
+      <div class="progress-line jquery">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>Python</span>
+      </div>
+      <div class="progress-line python">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>MySQL</span>
+      </div>
+      <div class="progress-line mysql">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

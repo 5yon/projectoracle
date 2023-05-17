@@ -1,0 +1,52 @@
+<form action="/homepage" ></form>
+<html >
+<head >
+<title > Jumanji Pets </title >A
+    <!-- create a title for the project this gets displayed in the browser -->
+    <link rel= "stylesheet" type="text/css"  href = "/static/style.css">
+    <!-- connects the HTML files to a style sheet called 'style.css'-->
+</head >
+<body >
+    <div class = " menu-bar ">
+    <!--Creates a Navigation Bar-->
+
+<ul >
+<li class="active"><a href="/"> Home</a> </li >
+    <!--Creates a home button link in the nav bar. This button just reloads the homepage. -->
+<li ><a href="#">Our Fish</a>
+    <!--This is not working currently. I will make this section usable in Iteration 2-->
+    <div class="sub-menu-1">
+        <!--Creates the drop down Menu containing the values below-->
+        <ul>
+            <!--Creates an Unordered List-->
+            <li><a href="#">Tetra</a></li>
+            <!--These are the different drop down options.-->
+            <li><a href="#">Gourami</a></li>
+            <li><a href="#">Angelfish</a></li>
+            <li><a href="#">Mollies</a></li>
+            <li><a href="#">Discus</a></li>
+        </ul>
+    </div>
+</li >
+<!--Aquarium Food type -->
+<li ><a href="#"> Aquarium Food</a>
+  <div class="sub-menu-1">
+        <ul>
+            <!-- Drop down Menu-->
+            <li><a href="#">Flake  </a></li>
+            <li><a href="#">Pellet  </a></li>
+        </ul>
+    </div>
+</li >
+<li ><a href="/about">About</a> </li >
+    <!--Creates a link to the about page-->
+<li ><a href="logout" class="btn btn-info btn-lg">
+    <!--Logout button which logs the user out of their account and session-->
+    <span class="glyphicon glyphicon-log-out"></span> Log out
+  </a> </li >
+<li ><a href="/user">Login</a> </li >
+</ul >
+  </div>
+</body >
+</html >
+</form>
